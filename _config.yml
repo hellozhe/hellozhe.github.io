@@ -5,8 +5,13 @@ encoding: utf-8
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-markdown: rdiscount
-highlighter: pygments
+#markdown: rdiscount
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+#highlighter: pygments
+highlightjs: true
+
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
