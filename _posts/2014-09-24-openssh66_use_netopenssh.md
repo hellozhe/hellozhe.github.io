@@ -13,10 +13,12 @@ tags: []
 
 google了下解决方法:
 
-```perl
+{% highlight perl %}
+
 my $ssh = Net::OpenSSH->new(
     $host,
     master_opts      => [ -F => '/dev/null' ],
     default_ssh_opts => [ -F => '/dev/null' ],
 );
-```
+
+{% highlight %}
