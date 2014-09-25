@@ -9,8 +9,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
-#highlighter: pygments
-highlightjs: true
+highlighter: pygments
 
 
 # Themes are encouraged to use these universal variables 
