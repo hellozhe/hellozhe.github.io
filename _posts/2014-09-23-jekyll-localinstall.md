@@ -18,7 +18,6 @@ description: MAC Jekyll本地环境安装
             rvm install ruby-2.1.2
 
 * jekky
-
     1.  更换gem source
 
             gem sources -l
@@ -42,14 +41,13 @@ description: MAC Jekyll本地环境安装
 
 ---
 
-* tips
+### tips
+- 设置字符的全局变量 
 
-    - 设置字符的全局变量 
+        LC_ALL=en_US.UTF-8
 
-            LC_ALL=en_US.UTF-8
+- Error: invalid byte sequence in US-ASCII #2379 解决方法
+    1. 找到jekyll.rb文件并编辑
 
-    - Error: invalid byte sequence in US-ASCII #2379 解决方法
-        1. 找到jekyll.rb文件并编辑
-
-                find / -name  "jekyll.rb"
-        2. 找到`clean_path.gsub!(/\A\w\:\//, '/')` ,替换为`clean_path.force_encoding('UTF-8').gsub!(/\A\w\:\//, '/')`
+             find / -name  "jekyll.rb"
+    2. 找到`clean_path.gsub!(/\A\w\:\//, '/')` ,替换为`clean_path.force_encoding('UTF-8').gsub!(/\A\w\:\//, '/')`
