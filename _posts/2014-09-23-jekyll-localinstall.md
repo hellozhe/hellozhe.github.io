@@ -23,15 +23,12 @@ description: MAC Jekyll本地环境安装
             gem sources -l
             gem sources --remove https://rubygems.org/
             gem sources -a http://ruby.taobao.org/
-
     2. 安装jekyll
 
             gem install jekyll
-
     3. 安装rdiscount(默认的解析markdown中文有点问题)
             
             gem install rdiscount
-
     4. 运行jekyll环境
 
         到代码目录运行,加上-w参数监测文件变化,自动重新编译
