@@ -5,7 +5,6 @@ description: ""
 category: TECO
 tags: [ansible]
 ---
-{% include JB/setup %}
 
 ### ansile-playbook
 

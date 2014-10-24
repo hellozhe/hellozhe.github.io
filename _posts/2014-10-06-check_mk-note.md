@@ -3,9 +3,8 @@ layout: post
 title: "check_mk note"
 description: ""
 category: TECO
-tags: [check_mk monitor]
+tags: check_mk monitor
 ---
-{% include JB/setup %}
 
 ### Check_MK Packages
 
