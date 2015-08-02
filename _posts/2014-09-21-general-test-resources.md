@@ -12,9 +12,4 @@ description:
 
 `python`
 
-
-- hello
-
-- world
-
 - vim
